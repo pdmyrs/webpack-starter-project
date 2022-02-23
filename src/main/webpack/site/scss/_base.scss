@@ -2,26 +2,25 @@
 
 html,
 body {
-    margin: 0;
-    font-size:   $font-size;
-    font-family: $font-family;
-    line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
+  margin: 0;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $font-height;
+  color: $color-foreground;
+  background: $color-background;
 
-    @media (prefers-color-scheme: dark) {
-        color:       $color-foreground-dark;
-        background:  $color-background-dark;
-    }
+  @media (prefers-color-scheme: dark) {
+    color: $color-foreground-dark;
+    background: $color-background-dark;
+  }
 }
 
-
 a {
-    color: $color-link;
+  color: $color-link;
 
-    @media (prefers-color-scheme: dark) {
-        color: $color-link-dark;
-    }
+  @media (prefers-color-scheme: dark) {
+    color: $color-link-dark;
+  }
 }
 
 button,
@@ -29,5 +28,91 @@ input,
 optgroup,
 select,
 textarea {
-    font: inherit;
+  font: inherit;
 }
+
+.card.v1 {
+  background-color: rgb(186, 212, 136);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: rgba(0, 0, 0, 0.2);
+
+  button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(241, 179, 62);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .added-to-cart {
+    color: black;
+    font-size: 32px;
+    display: none;
+  }
+}
+
+
+.card.v2 {
+    background-color: rgb(186, 212, 136);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color: rgba(0, 0, 0, 0.2);
+  
+    button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: rgb(241, 179, 62);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    button:hover {
+      opacity: 0.7;
+    }
+  
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+  
+    .added-to-cart {
+      color: black;
+      font-size: 32px;
+      display: none;
+    }
+
+
+.extra {
+    color: black;
+    font-size: 32px;
+    display: none;
+  }
+  }
+
+
+
+
